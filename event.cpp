@@ -18,7 +18,8 @@ Event::Event(const string& title, const string &description,
 
 void Event::openEvent()
 {
-	// ShellExecuteA(NULL, NULL, "chrome.exe", this->getLink().c_str(), NULL, SW_SHOWMAXIMIZED);
+	string sh = string("open ").append(this->link);
+	system(sh.c_str());
 }
 
 bool Event::compareEvent(Event event)

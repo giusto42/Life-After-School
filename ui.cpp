@@ -233,7 +233,7 @@ void UI::run()
 									currentEvent = 0;
 								break;
 							case 2:
-								// startPlaySongs();
+								eventsInMonth[currentEvent].openEvent();
 								break;
 							case 3:
 								currentEvent += 1;
