@@ -14,6 +14,8 @@ public:
 	Repository() {}
 
 	void add(const Event& event);
+	void deleteEvent(const Event& event);
+	void updateEvent(const Event& event);
 
 	int getEventPoz(Event event);
 
